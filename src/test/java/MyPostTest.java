@@ -24,14 +24,14 @@ public class MyPostTest {public class MyPostsTest extends AbstractTest {
     }
     @Test
     @DisplayName(" Переход на предыдущую страницу ленты своих постов ")
-    public void test3() throws InterruptedException {
+    public void test2() throws InterruptedException {
         loginPage.loginIn();
         myPostsPage.moveToPreviousPage();
         myPostsPage.checkMoveToPreviousPage();
 }
     @Test
     @DisplayName(" Сортировка постов от старых к новым и наоборот")
-    public void test5() throws InterruptedException {
+    public void test3() throws InterruptedException {
         loginPage.loginIn();
         myPostsPage.clickOrder();
         myPostsPage.checkOrderDESC();
